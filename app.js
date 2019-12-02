@@ -39,9 +39,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(function(req, res, next){
   global.connection = mysql.createConnection({
       host     : 'localhost',
-      user     : 'kdevorg1_admin',
-      database : 'kdevorg1_dev',
-      password : '19KOLA94dee@2908'
+      user     : 'root',
+      database : 'dbname',
+      password : ''
   });
   connection.connect();
   next();
